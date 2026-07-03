@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Soal PENGANTAR STATIKA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Latihan PENGANTAR STATIKA Interaktif</h1>
+
+    <div id="score-display">
+      Jawaban Benar: <span id="correct-count">0</span> / <span id="jumlah-soal">0</span>
+    </div>
+
+    <div id="quiz-container">
+      <div id="question-area">
+        <h3 id="question-number"></h3>
+
+        <img id="question-image" src="" alt="Gambar soal">
+
+        <div id="question-text"></div>
+
+        <div id="options-area"></div>
+      </div>
+
+      <div id="feedback-area" style="display: none;"></div>
+
+      <div id="navigation-area">
+        <button id="next-btn" onclick="nextQuestion()" disabled>Soal Selanjutnya</button>
+      </div>
+    </div>
+
+    <div id="final-result-area" style="display: none;">
+      <h2>Latihan Selesai!</h2>
+      <p>Total Soal: <span id="total-questions"></span></p>
+      <p>Jawaban Benar: <span id="final-correct-answers"></span></p>
+      <p>Skor Akhir Anda: <span id="final-score"></span></p>
+      <button onclick="window.location.reload()">Ulangi Latihan</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
